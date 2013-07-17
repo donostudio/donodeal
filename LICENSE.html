@@ -1,0 +1,1516 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1" />
+<title>Magento Commerce</title>
+<meta name="description" content="Default Description" />
+<meta name="keywords" content="Magento, Varien, E-commerce" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<link rel="icon" href="http://www.local.com/donodeal/media/favicon/default/logo.png" type="image/x-icon" />
+<link rel="shortcut icon" href="http://www.local.com/donodeal/media/favicon/default/logo.png" type="image/x-icon" />
+<!--[if lt IE 7]>
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://www.local.com/donodeal/js/blank.html';
+    var BLANK_IMG = 'http://www.local.com/donodeal/js/spacer.gif';
+//]]>
+</script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="http://www.local.com/donodeal/skin/frontend/default/donodeal/css/bootstrap.min.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.local.com/donodeal/skin/frontend/default/donodeal/css/twitter.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.local.com/donodeal/skin/frontend/default/donodeal/css/styles.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.local.com/donodeal/skin/frontend/default/donodeal/css/less/main-16px.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.local.com/donodeal/skin/frontend/base/default/css/widgets.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.local.com/donodeal/skin/frontend/default/donodeal/css/styles1.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.local.com/donodeal/skin/frontend/default/default/css/print.css" media="print" />
+<script type="text/javascript" src="http://www.local.com/donodeal/js/prototype/prototype.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/js/lib/ccard.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/js/jquery/jquery.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/js/prototype/validation.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/js/jquery/jquery.lazyload.min.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/js/jquery/jquery.jqzoom-core.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/js/jquery/jquery.artDialog.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/js/jquery/imagesloaded.pkgd.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/js/jquery/jquery.infinitescroll.min.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/js/jquery/dono.bootstrap.min.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/js/jquery/masonry.pkgd.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/js/scriptaculous/builder.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/js/scriptaculous/effects.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/js/scriptaculous/dragdrop.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/js/scriptaculous/controls.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/js/scriptaculous/slider.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/js/varien/js.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/js/varien/form.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/js/mage/cookies.js"></script>
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://www.local.com/donodeal/skin/frontend/default/default/css/styles-ie.css" media="all" />
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="http://www.local.com/donodeal/js/lib/ds-sleight.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/skin/frontend/base/default/js/ie6.js"></script>
+<![endif]-->
+
+<script type="text/javascript">
+//<![CDATA[
+Mage.Cookies.path     = '/donodeal';
+Mage.Cookies.domain   = '.www.local.com';
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+optionalZipCountries = ["HK","IE","MO","PA"];
+//]]>
+</script>
+<link rel="stylesheet" type="text/css" href="http://www.local.com/donodeal/skin/frontend/default/default/mw_onestepcheckout/css/jquery.fancybox-1.3.1.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.local.com/donodeal/skin/frontend/default/default/mw_onestepcheckout/css/jquery-ui-1.8.custom.css" media="all" />
+<link rel="stylesheet" type="text/css" href="http://www.local.com/donodeal/skin/frontend/default/default/mw_onestepcheckout/css/onestepcheckout.css" media="all" />
+<!-- <script language="JavaScript" src="http://j.maxmind.com/app/geoip.js"></script> -->
+<script type="text/javascript" src="http://www.local.com/donodeal/skin/frontend/default/default/mw_onestepcheckout/js/jquery-1.4.2.min.js"></script>
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/$MW_Onestepcheckout/1.4/$MW_Onestepcheckout.min.js"></script>-->
+<script type="text/javascript" src="http://www.local.com/donodeal/skin/frontend/default/default/mw_onestepcheckout/js/jquery.fancybox-1.3.1.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/skin/frontend/default/default/mw_onestepcheckout/js/noConflict.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/skin/frontend/default/default/mw_onestepcheckout/js/js.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/skin/frontend/default/default/mw_onestepcheckout/js/jquery-ui-1.8.6.custom.min.js"></script>
+<script type="text/javascript" src="http://www.local.com/donodeal/skin/frontend/default/default/mw_onestepcheckout/js/jquery-ui-timepicker-addon.min.js"></script>
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" media="all" />-->
+
+
+<script type="text/javascript">
+
+function logined()	//file js.js se call this funt 
+{
+	//var login=0;
+		return 0;
+}
+function hasaddress(){
+		return 0;
+}
+function payment_load(){
+	return 0;
+}
+function zip_load(){
+	return 0;
+}
+function region_load(){
+	return 0;
+}
+function city_load(){
+	return 0;
+}
+function country_load(){
+	return 1;
+}
+function update_paymentmethods(){
+	return 0;
+}
+</script>
+
+<script type="text/javascript">
+function removeProductId(product_id){
+	if(confirm('Are you sure you would like to remove this item from the shopping cart?')){
+		//isdelete=1;
+		removeProduct(product_id);
+	}
+}
+function updateEmailmsg(val){
+	$MW_Onestepcheckout('#message-box').html('');
+	$MW_Onestepcheckout('#loading-mask').css('display','block');
+	$MW_Onestepcheckout('.btn-checkout').attr('disabled','disabled');
+	var asyncdata;
+	$MW_Onestepcheckout.ajax({
+			async:false,
+			type: "POST",
+			url: "http://www.local.com/donodeal/onestepcheckout/index/updateemailmsg/",
+			//data: "str_value="+str_value,
+			data:"email="+val,
+			success: function(msg){
+				var error="<ul class=\"messages\"><li class=\"error-msg\"><ul><li>There is already a customer registered using this email address. Please login using this email address or enter a different email address.</li></ul></li></ul>";
+				//var success="<ul class=\"messages\"><li class=\"success-msg\"><ul><li>this email is available.</li></ul></li></ul>";
+				if(msg==0){
+					$MW_Onestepcheckout('#message-box').html(error);
+					$MW_Onestepcheckout('#billing\\:email').addClass('validation-failed');
+					//$MW_Onestepcheckout('#billing\\:email').attr('value','');
+					//$MW_Onestepcheckout('#messageis').value=0;
+					//$MW_Onestepcheckout('#messageis').attr('value','111111');
+					
+					$MW_Onestepcheckout('#loading-mask').css('display','none');
+					$MW_Onestepcheckout('.btn-checkout').removeAttr('disabled');
+					asyncdata='0';
+				}
+				else{
+					if(logined()!=1){
+					 $MW_Onestepcheckout('#message-box').html('');// $MW_Onestepcheckout('#message-box').html(success);
+					}
+					$MW_Onestepcheckout('#billing\\:email').removeClass('validation-failed');
+					//$MW_Onestepcheckout('#messageis').value=1;
+					//$MW_Onestepcheckout('#messageis').attr('value','111111');
+					$MW_Onestepcheckout('#loading-mask').css('display','none');
+					$MW_Onestepcheckout('.btn-checkout').removeAttr('disabled');
+					asyncdata= '1';
+				}
+			}
+		});	
+		//alert(abc);
+	return asyncdata;	
+}
+function updateShippingType(str_value)
+{	$MW_Onestepcheckout('#message-box').html('');
+	$MW_Onestepcheckout('#loading-mask').css('display','block');
+	$MW_Onestepcheckout('.btn-checkout').attr('disabled','disabled');
+			$MW_Onestepcheckout.ajax({
+		type: "POST",
+		url: "http://www.local.com/donodeal/onestepcheckout/index/updateshippingtype/",
+		//data: "str_value="+str_value,
+		data:$MW_Onestepcheckout("#onestep_form").serialize(),
+		success: function(msg){
+				$MW_Onestepcheckout('#checkout-shipping-method-load').html(msg);
+				if($MW_Onestepcheckout('input[name=shipping_method]:checked').val()){
+					updateShippingMethod();
+				}
+				if(!update_paymentmethods()){
+					if($MW_Onestepcheckout("input[name=payment\[method\]]:checked").val() && payment_load()){
+						updatePaymentMethod($MW_Onestepcheckout("input[name=payment\[method\]]:checked").val());
+					}					
+					else{
+						$MW_Onestepcheckout('#loading-mask').css('display','none');
+						$MW_Onestepcheckout('.btn-checkout').removeAttr('disabled');	
+					}
+				}
+				else{
+					$MW_Onestepcheckout.ajax({
+					type: "POST",
+					url: "http://www.local.com/donodeal/onestepcheckout/index/updatepaymenttype/",
+					//data: "str_value="+str_value,
+					data:$MW_Onestepcheckout("#onestep_form").serialize(),
+					success: function(msg){
+							$MW_Onestepcheckout('#checkout-payment-method-load').html(msg);
+							if($MW_Onestepcheckout("input[name=payment\[method\]]:checked").val() && payment_load()){
+								updatePaymentMethod($MW_Onestepcheckout("input[name=payment\[method\]]:checked").val());
+							}
+							else{
+							$MW_Onestepcheckout('#loading-mask').css('display','none');
+							$MW_Onestepcheckout('.btn-checkout').removeAttr('disabled');
+							}
+						}
+					});	
+				}
+			}
+		});
+		// $MW_Onestepcheckout('#loading-mask').css('display','block');
+	// $MW_Onestepcheckout('.btn-checkout').attr('disabled','disabled');
+		// $MW_Onestepcheckout.ajax({
+		// type: "POST",
+		// url: "http://www.local.com/donodeal/onestepcheckout/index/updatepaymenttype/",
+		// //data: "str_value="+str_value,
+		// data:$MW_Onestepcheckout("#onestep_form").serialize(),
+		// success: function(msg){
+				// $MW_Onestepcheckout('#checkout-payment-method-load').html(msg);
+				// if($MW_Onestepcheckout("input[name=payment\[method\]]:checked").val()){
+					// updatePaymentMethod($MW_Onestepcheckout("input[name=payment\[method\]]:checked").val());
+				// }
+				// else{
+				// $MW_Onestepcheckout('#loading-mask').css('display','none');
+				// $MW_Onestepcheckout('.btn-checkout').removeAttr('disabled');
+				// }
+			// }
+		// });
+}
+
+
+</script>
+
+<script type="text/javascript">
+			var ip="127.0.0.1"; //this line do error javascript, this code need wrapper in " code.."
+</script>
+
+
+<script type="text/javascript">//<![CDATA[
+        var Translator = new Translate([]);
+        //]]></script></head>
+<body class=" checkout-onepage-ajaxindex">
+<div class="wrapper">
+        <noscript>
+        <div class="global-site-notice noscript">
+            <div class="notice-inner">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong><br />
+                    You must have JavaScript enabled in your browser to utilize the functionality of this website.                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="page">
+        <div class="dono-h-t-p"></div>
+<div id="dono-h-t">
+	<div class="dono-h-t-w clearfix">
+		<div class="dono-h-t-l">
+			<div class="dono-cat-btn fl">
+				<a target="_self" class="d-t bgt"><span>All Categories</span></a>
+				<div class="dono-m-w">
+					<div class="dono-m-i">
+											</div>
+					<div class="dono-m-c">
+						1111
+					</div>
+				</div>
+			</div>
+			<div id="dono-search-header" class="fl">
+<form id="search_mini_form" action="http://www.local.com/donodeal/catalogsearch/result/jsonresult/" method="get">
+    <div class="form-search">
+        <input id="search" placeholder="Search" type="text" autocomplete="off" name="q" value="" class="dono-input-cls" maxlength="128" />
+        <div id="search_autocomplete" class="search-autocomplete"></div>
+    </div>
+    <div id="dono-s-loading" class="dono-s-loading"></div>
+    <button type="submit" title="Search" class="dono-seach-min">&nbsp;</button>
+</form>
+</div>
+<div id="DonoSearchDlg" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+		<h3 id="myModalLabel">Modal header</h3>
+	</div>
+	<div class="modal-body">
+		<p>One fine body</p>
+	</div>
+	<div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+	</div>
+</div>
+<script type="text/javascript">
+	(function($){
+		var dono_search = {
+				loading:0,
+				dataUrl:'http://www.local.com/donodeal/catalogsearch/result/jsonresult/',
+				showLoading:function(){
+					this.loading = 1;
+					$('#dono-s-loading').show();
+				},
+				hideLoading:function(){
+					this.loading = 0;
+					$('#dono-s-loading').hide();
+				},
+				source: function(q,process){
+					if(this.loading) return false;
+					this.showLoading();
+					this.loadData(q,process);
+				},
+				loadData:function(q,process){
+					$.ajax({
+						url:this.dataUrl,
+						dataType:'json',
+						data:{q:q},
+						type:'GET',
+						success: function(rsp){
+							if(rsp.success)
+							process(rsp.result);
+						},
+						complete: this.hideLoading
+					});
+				},
+				showDialog: function(val){
+					$('#DonoSearchDlg').modal({
+						backdrop:true,
+						remote:val
+						//remote:'http://www.local.com/donodeal/catalogSearch/productdetail/index/'+val
+					}).on('hidden', function () {
+
+				    }).on('hide', function () {
+
+				    }).on('show', function () {
+
+				    }).on('shown', function () {
+						
+				    });
+				}
+		};
+		$().ready(function(){
+			$('#search').typeahead({
+				source:function(){
+					dono_search.source.apply(dono_search,arguments);
+				},
+				items:8,
+				minLength:3,
+				matcher:function(item){
+						return true;
+				},
+				sorter:function(items){
+					return items;
+				},
+				process:function(){
+					
+				},
+				highlighter:function(item){
+					var $html='';
+					switch(item.type){
+						case 'product':
+							$html = '<img width="30" height="30" src="'+item.image+'"><label>'+item.name+'</label><span style="color:#cccccc">(from '+item.type+')</span>';
+							break;
+						case 'category':
+							$html = item.name+'</label><span style="color:#cccccc">(from '+item.type+')</span>';
+							break;
+						case 'tag':
+							$html = item.name+'</label><span style="color:#cccccc">(from '+item.type+')</span>';
+							break;
+						default:
+							
+					}
+					return $html;
+				},
+				render: function (items) {
+					var that = this
+				      items = $(items).map(function (i, item) {
+				        //i = $(that.options.item).attr('data-value', item.name)
+						i = $(that.options.item).attr('data-value', item.url)
+			        	i.find('a').html(that.highlighter(item))
+                                        i.find('a').attr('href',item.url)
+				        return i[0]
+				      })
+				      items.first().addClass('active')
+				      this.$menu.html(items)
+				      return this
+				},
+				select: function () {
+				      var val = this.$menu.find('.active').attr('data-value')
+				      /*this.$element
+				        .val(this.updater(val))
+				        .change();*/
+				      dono_search.showDialog(val);
+				      return this.hide();
+				 }
+				
+			});
+		});
+	})(jQuery);
+</script>		</div>
+		<div class="dono-h-t-c">
+			<a href="http://www.local.com/donodeal/" title="Magento Commerce" class="logo bgt"><img src="http://www.local.com/donodeal/skin/frontend/default/donodeal/images/logo.png" alt="Magento Commerce" /></a>			
+		</div>
+		<div class="dono-h-t-r">
+			<div class="ds-acc-w">
+				<a target="_self" class="ds-acc bgt">
+					<span>My Account</span>
+				</a>
+			</div>
+			<div class="ds-cart-w">
+				<a target="_self" class="ds-cart bgt">
+					<span>Cart</span>
+				</a>
+				<div class="ds-cart-items">
+					<div class="ds-c-loading">
+						
+					</div>
+				</div>
+			</div>
+			<div class="d-s-filter">
+				<a target="_self" class="ds-filter bgt">
+					<span>Filter</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+        <div class="main-container col1-layout">
+            <div class="main">
+                                <div class="col-main">
+                                        <script type="text/javascript">
+var message_payment = "Please select a payment method for your order!";//giup dua cac' chuoi~ nay` vao file .csv
+var message_ship = "Please select a shipping method for your order!";
+function updateShippingMethod()
+{
+	urls= 'http://www.local.com/donodeal/onestepcheckout/index/updateshippingmethod/';
+	$MW_Onestepcheckout('#message-box').html('');
+	$MW_Onestepcheckout('.btn-checkout').attr('disabled','disabled');
+	$MW_Onestepcheckout('#loading-mask').css('display','block');
+	$MW_Onestepcheckout.ajax({
+	   type: "POST",
+	   url: urls,
+	   data: "shipping_method="+$MW_Onestepcheckout('input[name=shipping_method]:checked').val(),
+	   success: function(msg){
+		$MW_Onestepcheckout('#checkout-review-load').html(msg);
+		$MW_Onestepcheckout('#loading-mask').css('display','none');
+		$MW_Onestepcheckout('.btn-checkout').removeAttr('disabled');
+	   }
+	});
+}
+function updatePaymentMethod(value)
+{
+	//msg = "Loadding ...";
+	//$MW_Onestepcheckout('#checkout-review-load').html(msg);	// #checkout-review-load: id cua? bang? tong? tie`n, lenh .html(msg) cho phep gi lai. noi dung cua id voi'noi dung chua' trong bien $msg
+	$MW_Onestepcheckout('#message-box').html('');
+	$MW_Onestepcheckout('#loading-mask').css('display','block');
+	$MW_Onestepcheckout('.btn-checkout').attr('disabled','disabled');
+	$MW_Onestepcheckout.ajax({
+	   type: "POST",
+	   url: "http://www.local.com/donodeal/onestepcheckout/index/updatepaymentmethod/",
+	   data: "payment%5Bmethod%5D="+value,
+	   success: function(msg){
+		if(msg.search("<script")!=0){
+		//alert(msg.search("<script"));
+		$MW_Onestepcheckout('#checkout-review-load').html(msg);
+		}
+		//else
+		//	$MW_Onestepcheckout('#checkout-review-load').append(msg);	//message thong bao info payment method ko hop le
+		$MW_Onestepcheckout('#loading-mask').css('display','none');
+		$MW_Onestepcheckout('.btn-checkout').removeAttr('disabled');
+	   }
+	 });
+}
+function updateCoupon(code,isremove){
+	$MW_Onestepcheckout('#message-box').html('');
+	$MW_Onestepcheckout('#loading-mask').css('display','block');
+	$MW_Onestepcheckout('.btn-checkout').attr('disabled','disabled');
+	$MW_Onestepcheckout.ajax({
+	   type: "POST",
+	   url: "http://www.local.com/donodeal/onestepcheckout/index/updatecoupon/",
+	   data: "coupon_code="+code+"&remove="+isremove,
+	   success: function(msg){
+		str=jQuery.parseJSON(msg);
+		//console.debug(str.coupon);
+		//console.debug(str.view);
+		$MW_Onestepcheckout('#tab-coupon').html(str.coupon);
+		$MW_Onestepcheckout('#checkout-review-load').html(str.view);
+		$MW_Onestepcheckout('#loading-mask').css('display','none');
+		$MW_Onestepcheckout('.btn-checkout').removeAttr('disabled');
+	   }
+	});	
+}
+function updateQtyProduct(){
+	qtydata=$MW_Onestepcheckout("input[name^='cart\[']"); //selector all element have name ~ cart[
+	//console.debug(qtydata.length);
+	str='';
+	for(var i=0;i< qtydata.length;i++){
+		//console.debug(qtydata[i]);
+		str_escape=escape(qtydata[i].name)+"="+qtydata[i].value;
+		str+=str_escape;
+		if(i!=qtydata.length-1){str+="&"}
+	}
+	//str_escape=escape(str);
+	//console.debug(str_escape);
+	$MW_Onestepcheckout('#message-box').html('');
+	$MW_Onestepcheckout('#loading-mask').css('display','block');
+	$MW_Onestepcheckout('.btn-checkout').attr('disabled','disabled');
+	$MW_Onestepcheckout.ajax({
+	   type: "POST",
+	   url: "http://www.local.com/donodeal/onestepcheckout/index/updateqty/",
+	   data: str,
+	   success: function(msg){
+		str=jQuery.parseJSON(msg);
+
+		if(str.view.search("<script")!=0){
+		//alert(msg.search("<script"));
+		$MW_Onestepcheckout('#checkout-review-load').html(str.view);
+		}
+		else
+			$MW_Onestepcheckout('#checkout-review-load').append(str.view);
+		$MW_Onestepcheckout('#loading-mask').css('display','none');
+		$MW_Onestepcheckout('.btn-checkout').removeAttr('disabled');
+	   }
+	});		
+}
+function removeProduct(id){
+	//kiem tra xem co block gift message
+	hasgift=(typeof($MW_Onestepcheckout('#allow-gift-message-container'))!='undefined')?1:0;
+	//alert(typeof($MW_Onestepcheckout('#allow-gift-message-container')));
+	//console.debug($hasgift);
+	$MW_Onestepcheckout('#message-box').html('');
+	$MW_Onestepcheckout('#loading-mask').css('display','block');
+	$MW_Onestepcheckout('.btn-checkout').attr('disabled','disabled');
+	$MW_Onestepcheckout.ajax({
+	   type: "POST",
+	   url: "http://www.local.com/donodeal/onestepcheckout/index/removeproduct/",
+	   data: "id="+id+'&hasgiftbox='+hasgift,
+	   success: function(msg){
+		str=jQuery.parseJSON(msg);
+
+		if(str.view.search("<script")!=0){
+		//alert(msg.search("<script"));
+			if(str.giftbox){
+				$MW_Onestepcheckout('#checkout-review-load').html(str.view);
+				$MW_Onestepcheckout('#onepage-checkout-shipping-method-additional-load').html(str.giftbox);
+			}else{
+				$MW_Onestepcheckout('#checkout-review-load').html(str.view);
+			}
+		}
+		else{
+			$MW_Onestepcheckout('#checkout-review-load').append(str.view);			
+		}
+		$MW_Onestepcheckout('#loading-mask').css('display','none');
+		$MW_Onestepcheckout('.btn-checkout').removeAttr('disabled');
+	   }
+	});	
+}
+$MW_Onestepcheckout(function(){
+	//add fancybox 
+	//$MW_Onestepcheckout('#example1').datetimepicker();
+	
+		$MW_Onestepcheckout("#loginbox").fancybox({
+			'titlePosition'		: 'inside',
+			'transitionIn'		: 'none',
+			'transitionOut'		: 'none'
+		});
+		$MW_Onestepcheckout("#onestepcheckout-toc-link").fancybox({
+			'titlePosition'		: 'inside',
+			'transitionIn'		: 'none',
+			'transitionOut'		: 'none'
+		});
+		$MW_Onestepcheckout("#forgotpassword").fancybox({
+			'titlePosition'		: 'inside',
+			'transitionIn'		: 'none',
+			'transitionOut'		: 'none'
+		});
+		$MW_Onestepcheckout("#backlogin").fancybox({
+			'titlePosition'		: 'inside',
+			'transitionIn'		: 'none',
+			'transitionOut'		: 'none'
+		});	
+		var str_value=",,,,,";
+		if($MW_Onestepcheckout("#billing\\:country_id option:selected").val()){		//neu tag select billing:country co 1 gia tri duoc select
+		//ship_type=$MW_Onestepcheckout("#billing\\:country_id option:selected").val();	//gan gia tri
+		str_value=","+$MW_Onestepcheckout("#billing\\:country_id option:selected").val()+",,,,";	//gan gia tri
+	}
+	var completeajax=1;
+	$MW_Onestepcheckout('.btn-checkout').attr('disabled','disabled');
+	$MW_Onestepcheckout.ajax({
+	   type: "POST",
+	   url:"http://www.local.com/donodeal/onestepcheckout/index/updateshippingmethod/",
+	   data: "shipping_method="+$MW_Onestepcheckout('input[name=shipping_method]:checked').val(),
+	   success: function(msg){
+		$MW_Onestepcheckout('#checkout-review-load').html(msg);
+		//$MW_Onestepcheckout('#loading-mask').css('display','none');
+		
+	   }
+	});
+	if($MW_Onestepcheckout("input[name=payment\[method\]]:checked").val() && payment_load()){
+		//updatePaymentMethod($MW_Onestepcheckout("input[name=payment\[method\]]:checked").val());
+		value=$MW_Onestepcheckout("input[name=payment\[method\]]:checked").val();
+		//$MW_Onestepcheckout('.btn-checkout').attr('disabled','disabled');
+		$MW_Onestepcheckout.ajax({
+		   type: "POST",
+		   url: "http://www.local.com/donodeal/onestepcheckout/index/updatepaymentmethod/",
+		   data: "payment%5Bmethod%5D="+value,
+		   success: function(msg){
+			if(msg.search("<script")!=0){
+			//alert(msg.search("<script"));
+			$MW_Onestepcheckout('#checkout-review-load').html(msg);
+			}
+			else
+				$MW_Onestepcheckout('#checkout-review-load').append(msg);
+			//$MW_Onestepcheckout('#loading-mask').css('display','none');
+			//$MW_Onestepcheckout('.btn-checkout').removeAttr('disabled');
+		   }
+		 });
+	}
+	$MW_Onestepcheckout('.btn-checkout').removeAttr('disabled');
+		//valid form khi click nut PLACE ORDER
+		$MW_Onestepcheckout('.btn-checkout').click(function(e){
+				//	First validate the form
+					//$MW_Onestepcheckout('#onestep_form').submit();
+					//return true;
+					var form = new VarienForm('onestep_form');
+					var logic=true;
+												var notshipmethod=$MW_Onestepcheckout("input[name=shipping_method]:checked").val();
+										if(!$MW_Onestepcheckout("input[name=payment[method]]:checked").val() || !notshipmethod){
+					logic=false;
+					}
+					if(!$MW_Onestepcheckout("input[name=payment[method]]:checked").val()){	//neu cac method payment chua duoc chon
+						if(!$MW_Onestepcheckout('#advice-required-entry_payment').length){	//neu' phan tu valid chua duoc hien len, thi` cho no hien len
+						$MW_Onestepcheckout('#checkout-payment-method-load').append('<dt><div class="validation-advice" id="advice-required-entry_payment" style="">'+message_payment+'</div></dt>');
+						//if($MW_Onestepcheckout('#advice-required-entry_payment').attr('display')!="none"){
+						//$MW_Onestepcheckout('#advice-required-entry_payment').css('display','block');
+						}
+					}
+					else
+					$MW_Onestepcheckout('#advice-required-entry_payment').remove();
+					//$MW_Onestepcheckout('#advice-required-entry_payment').css('display','none');
+					
+					if(!notshipmethod){
+						if(!$MW_Onestepcheckout('#advice-required-entry_shipping').length){
+						$MW_Onestepcheckout('#checkout-shipping-method-loadding').append('<dt><div class="validation-advice" id="advice-required-entry_shipping" style="">'+message_ship+'</div></dt>');
+						//if($MW_Onestepcheckout('#advice-required-entry_shipping').attr('display')!="none"){
+						//$MW_Onestepcheckout('#advice-required-entry_shipping').css('display','block');
+						}
+
+					}
+					else
+					$MW_Onestepcheckout('#advice-required-entry_shipping').remove();
+					//$MW_Onestepcheckout('#advice-required-entry_shipping').css('display','none');
+
+					if(!form.validator.validate())	{
+						val=$MW_Onestepcheckout('#billing\\:email').val();
+						emailvalidated=Validation.get('IsEmpty').test(val) || /^([a-z0-9,!\#\$%&'\*\+\/=\?\^_`\{\|\}~-]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z0-9,!\#\$%&'\*\+\/=\?\^_`\{\|\}~-]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*@([a-z0-9-]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z0-9-]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*\.(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]){2,})$/i.test(val);
+						//alert(emailvalidated);		//validate chi cho moi field email
+						if(val!="" && emailvalidated){
+							updateEmailmsg(val);
+						}
+						//alert(val1);
+						//val_emailbill_before=val;
+						Event.stop(e);				
+					}
+					else{
+						if(logined()!=1){
+							//$MW_Onestepcheckout('#billing\\:email').blur(function(event){
+							//val=this.value;
+							val=$MW_Onestepcheckout('#billing\\:email').val();
+							emailvalidated=Validation.get('IsEmpty').test(val) || /^([a-z0-9,!\#\$%&'\*\+\/=\?\^_`\{\|\}~-]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z0-9,!\#\$%&'\*\+\/=\?\^_`\{\|\}~-]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*@([a-z0-9-]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z0-9-]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*\.(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]){2,})$/i.test(val);
+							//alert(emailvalidated);		//validate chi cho moi field email
+							if(val!="" && emailvalidated){
+								msgerror=updateEmailmsg(val);
+							}
+							//val_emailbill_before=val;
+							if(msgerror==0){
+								//alert(msgerror);
+								return false;
+							}
+						}
+						
+						if(logic){
+						$MW_Onestepcheckout('#onestep_form').submit();
+						$MW_Onestepcheckout('.btn-checkout').attr("disabled","disabled");
+						}
+						else {
+							return false;
+						}
+					}
+					return false;
+		});
+});
+</script>
+	<hidden value="Welcome to One Step Checkout Pro"></hidden>
+	<hidden value="Please enter your details below to complete your purchase."></hidden>
+	<h1>Welcome to One Step Checkout Pro</h1>
+	<p>please input infomation for form below</p>
+	<div id="message-box">
+			</div>
+					<a id="loginbox" href="#inline1" title="">Already registered? Click here to login.</a>
+			
+	<div class="onestepcheckout-threecolumns checkoutcontainer onestepcheckout-skin-generic">
+		<form id="onestep_form" action="http://www.local.com/donodeal/onestepcheckout/index/updateordermethod/" method="POST">
+
+			<div class="onestepcheckout-column-left">	
+				<p class="onestepcheckout-numbers onestepcheckout-numbers-1">Billing address</p>
+				<div>
+						<div id="co-billing-form">
+		<fieldset>
+			<ul class="form-list">
+					<li id="billing-new-address-form">
+			<fieldset>
+					<input type="hidden" name="billing[address_id]" value="" id="billing:address_id" />
+					<ul>
+						
+																		<li class="fields">		<div class="customer-name">
+					<div class="field name-firstname">
+				<label for="billing:firstname" class="required"><em>*</em>First Name</label>
+				<div class="input-box">
+					<input type="text" id="billing:firstname" name="billing[firstname]" value="" title="First Name" class="input-text required-entry"  />
+				</div>
+			</div>
+					<div class="field name-lastname">
+				<label for="billing:lastname" class="required"><em>*</em>Last Name</label>
+				<div class="input-box">
+					<input type="text" id="billing:lastname" name="billing[lastname]" value="" title="Last Name" class="input-text required-entry"  />
+				</div>
+			</div>
+				</div>
+
+</li>
+						<li class="fields">
+							<div class="field">
+								<label for="billing:company" class="required">Company</label>
+								<div class="input-box">
+									<input type="text" id="billing:company" name="billing[company]" value="" title="Company" class="input-text inputtext" />
+								</div>
+							</div>
+											<div class="field">
+								<label for="billing:email" class="required"><em>*</em>Email Address</label>
+								<div class="input-box">
+									<input type="text" name="billing[email]" id="billing:email" value="" title="Email Address" class="input-text inputtext validate-email required-entry" />
+								</div>
+							</div>
+										</li>
+						<li class="wide">
+							<label for="billing:street1" class="required"><em>*</em>Address</label>
+							<div class="input-box">
+								<input type="text" title="Street Address" name="billing[street][]" id="billing:street1" value="" class="input-text inputtext required-entry" />
+							</div>
+						</li>
+										<li class="wide">
+							<div class="input-box">
+								<input type="text" title="Street Address 2" name="billing[street][]" id="billing:street2" value="" class="input-text inputtext" />
+							</div>
+						</li>
+										<li class="fields">
+							<div class="field">
+								<label for="billing:city" class="required"><em>*</em>City</label>
+								<div class="input-box">
+									<input type="text" title="City" name="billing[city]" value="" class="input-text inputtext required-entry" id="billing:city" />
+								</div>
+							</div>
+							<div class="field">
+								<label for="billing:region_id" class="required"><em>*</em>State/Province</label>
+								<div class="input-box">
+									<select id="billing:region_id" name="billing[region_id]" title="State/Province" class="validate-select" style="display:none;">
+										<option value="">Please select region, state or province</option>
+									</select>
+									<script type="text/javascript">
+									//<![CDATA[
+										$('billing:region_id').setAttribute('defaultValue',  "");
+									//]]>
+									</script>
+									<input type="text" id="billing:region" name="billing[region]" value=""  title="State/Province" class="input-text inputtext" style="display:none;" />
+								</div>
+							</div>
+						</li>
+						<li class="fields">
+							<div class="field">
+								<label for="billing:postcode" class="required"><em>*</em>Zip/Postal Code</label>
+								<div class="input-box">
+									<input type="text" title="Zip/Postal Code" name="billing[postcode]" id="billing:postcode" value="" class="input-text inputtext validate-zip-international required-entry" />
+								</div>
+							</div>
+							<div class="field">
+								<label for="billing:country_id" class="required"><em>*</em>Country</label>
+								<div class="input-box">
+									<select name="billing[country_id]" id="billing:country_id" class="validate-select billing_country" title="Country" ><option value="" > </option><option value="AF" >Afghanistan</option><option value="AL" >Albania</option><option value="DZ" >Algeria</option><option value="AS" >American Samoa</option><option value="AD" >Andorra</option><option value="AO" >Angola</option><option value="AI" >Anguilla</option><option value="AQ" >Antarctica</option><option value="AG" >Antigua and Barbuda</option><option value="AR" >Argentina</option><option value="AM" >Armenia</option><option value="AW" >Aruba</option><option value="AU" >Australia</option><option value="AT" >Austria</option><option value="AZ" >Azerbaijan</option><option value="BS" >Bahamas</option><option value="BH" >Bahrain</option><option value="BD" >Bangladesh</option><option value="BB" >Barbados</option><option value="BY" >Belarus</option><option value="BE" >Belgium</option><option value="BZ" >Belize</option><option value="BJ" >Benin</option><option value="BM" >Bermuda</option><option value="BT" >Bhutan</option><option value="BO" >Bolivia</option><option value="BA" >Bosnia and Herzegovina</option><option value="BW" >Botswana</option><option value="BV" >Bouvet Island</option><option value="BR" >Brazil</option><option value="IO" >British Indian Ocean Territory</option><option value="VG" >British Virgin Islands</option><option value="BN" >Brunei</option><option value="BG" >Bulgaria</option><option value="BF" >Burkina Faso</option><option value="BI" >Burundi</option><option value="KH" >Cambodia</option><option value="CM" >Cameroon</option><option value="CA" >Canada</option><option value="CV" >Cape Verde</option><option value="KY" >Cayman Islands</option><option value="CF" >Central African Republic</option><option value="TD" >Chad</option><option value="CL" >Chile</option><option value="CN" >China</option><option value="CX" >Christmas Island</option><option value="CC" >Cocos [Keeling] Islands</option><option value="CO" >Colombia</option><option value="KM" >Comoros</option><option value="CG" >Congo - Brazzaville</option><option value="CD" >Congo - Kinshasa</option><option value="CK" >Cook Islands</option><option value="CR" >Costa Rica</option><option value="HR" >Croatia</option><option value="CU" >Cuba</option><option value="CY" >Cyprus</option><option value="CZ" >Czech Republic</option><option value="CI" >Côte d’Ivoire</option><option value="DK" >Denmark</option><option value="DJ" >Djibouti</option><option value="DM" >Dominica</option><option value="DO" >Dominican Republic</option><option value="EC" >Ecuador</option><option value="EG" >Egypt</option><option value="SV" >El Salvador</option><option value="GQ" >Equatorial Guinea</option><option value="ER" >Eritrea</option><option value="EE" >Estonia</option><option value="ET" >Ethiopia</option><option value="FK" >Falkland Islands</option><option value="FO" >Faroe Islands</option><option value="FJ" >Fiji</option><option value="FI" >Finland</option><option value="FR" >France</option><option value="GF" >French Guiana</option><option value="PF" >French Polynesia</option><option value="TF" >French Southern Territories</option><option value="GA" >Gabon</option><option value="GM" >Gambia</option><option value="GE" >Georgia</option><option value="DE" >Germany</option><option value="GH" >Ghana</option><option value="GI" >Gibraltar</option><option value="GR" >Greece</option><option value="GL" >Greenland</option><option value="GD" >Grenada</option><option value="GP" >Guadeloupe</option><option value="GU" >Guam</option><option value="GT" >Guatemala</option><option value="GG" >Guernsey</option><option value="GN" >Guinea</option><option value="GW" >Guinea-Bissau</option><option value="GY" >Guyana</option><option value="HT" >Haiti</option><option value="HM" >Heard Island and McDonald Islands</option><option value="HN" >Honduras</option><option value="HK" >Hong Kong SAR China</option><option value="HU" >Hungary</option><option value="IS" >Iceland</option><option value="IN" >India</option><option value="ID" >Indonesia</option><option value="IR" >Iran</option><option value="IQ" >Iraq</option><option value="IE" >Ireland</option><option value="IM" >Isle of Man</option><option value="IL" >Israel</option><option value="IT" >Italy</option><option value="JM" >Jamaica</option><option value="JP" >Japan</option><option value="JE" >Jersey</option><option value="JO" >Jordan</option><option value="KZ" >Kazakhstan</option><option value="KE" >Kenya</option><option value="KI" >Kiribati</option><option value="KW" >Kuwait</option><option value="KG" >Kyrgyzstan</option><option value="LA" >Laos</option><option value="LV" >Latvia</option><option value="LB" >Lebanon</option><option value="LS" >Lesotho</option><option value="LR" >Liberia</option><option value="LY" >Libya</option><option value="LI" >Liechtenstein</option><option value="LT" >Lithuania</option><option value="LU" >Luxembourg</option><option value="MO" >Macau SAR China</option><option value="MK" >Macedonia</option><option value="MG" >Madagascar</option><option value="MW" >Malawi</option><option value="MY" >Malaysia</option><option value="MV" >Maldives</option><option value="ML" >Mali</option><option value="MT" >Malta</option><option value="MH" >Marshall Islands</option><option value="MQ" >Martinique</option><option value="MR" >Mauritania</option><option value="MU" >Mauritius</option><option value="YT" >Mayotte</option><option value="MX" >Mexico</option><option value="FM" >Micronesia</option><option value="MD" >Moldova</option><option value="MC" >Monaco</option><option value="MN" >Mongolia</option><option value="ME" >Montenegro</option><option value="MS" >Montserrat</option><option value="MA" >Morocco</option><option value="MZ" >Mozambique</option><option value="MM" >Myanmar [Burma]</option><option value="NA" >Namibia</option><option value="NR" >Nauru</option><option value="NP" >Nepal</option><option value="NL" >Netherlands</option><option value="AN" >Netherlands Antilles</option><option value="NC" >New Caledonia</option><option value="NZ" >New Zealand</option><option value="NI" >Nicaragua</option><option value="NE" >Niger</option><option value="NG" >Nigeria</option><option value="NU" >Niue</option><option value="NF" >Norfolk Island</option><option value="KP" >North Korea</option><option value="MP" >Northern Mariana Islands</option><option value="NO" >Norway</option><option value="OM" >Oman</option><option value="PK" >Pakistan</option><option value="PW" >Palau</option><option value="PS" >Palestinian Territories</option><option value="PA" >Panama</option><option value="PG" >Papua New Guinea</option><option value="PY" >Paraguay</option><option value="PE" >Peru</option><option value="PH" >Philippines</option><option value="PN" >Pitcairn Islands</option><option value="PL" >Poland</option><option value="PT" >Portugal</option><option value="PR" >Puerto Rico</option><option value="QA" >Qatar</option><option value="RO" >Romania</option><option value="RU" >Russia</option><option value="RW" >Rwanda</option><option value="RE" >Réunion</option><option value="BL" >Saint Barthélemy</option><option value="SH" >Saint Helena</option><option value="KN" >Saint Kitts and Nevis</option><option value="LC" >Saint Lucia</option><option value="MF" >Saint Martin</option><option value="PM" >Saint Pierre and Miquelon</option><option value="VC" >Saint Vincent and the Grenadines</option><option value="WS" >Samoa</option><option value="SM" >San Marino</option><option value="SA" >Saudi Arabia</option><option value="SN" >Senegal</option><option value="RS" >Serbia</option><option value="SC" >Seychelles</option><option value="SL" >Sierra Leone</option><option value="SG" >Singapore</option><option value="SK" >Slovakia</option><option value="SI" >Slovenia</option><option value="SB" >Solomon Islands</option><option value="SO" >Somalia</option><option value="ZA" >South Africa</option><option value="GS" >South Georgia and the South Sandwich Islands</option><option value="KR" >South Korea</option><option value="ES" >Spain</option><option value="LK" >Sri Lanka</option><option value="SD" >Sudan</option><option value="SR" >Suriname</option><option value="SJ" >Svalbard and Jan Mayen</option><option value="SZ" >Swaziland</option><option value="SE" >Sweden</option><option value="CH" >Switzerland</option><option value="SY" >Syria</option><option value="ST" >São Tomé and Príncipe</option><option value="TW" >Taiwan</option><option value="TJ" >Tajikistan</option><option value="TZ" >Tanzania</option><option value="TH" >Thailand</option><option value="TL" >Timor-Leste</option><option value="TG" >Togo</option><option value="TK" >Tokelau</option><option value="TO" >Tonga</option><option value="TT" >Trinidad and Tobago</option><option value="TN" >Tunisia</option><option value="TR" >Turkey</option><option value="TM" >Turkmenistan</option><option value="TC" >Turks and Caicos Islands</option><option value="TV" >Tuvalu</option><option value="UM" >U.S. Minor Outlying Islands</option><option value="VI" >U.S. Virgin Islands</option><option value="UG" >Uganda</option><option value="UA" >Ukraine</option><option value="AE" >United Arab Emirates</option><option value="GB" >United Kingdom</option><option value="US" selected="selected" >United States</option><option value="UY" >Uruguay</option><option value="UZ" >Uzbekistan</option><option value="VU" >Vanuatu</option><option value="VA" >Vatican City</option><option value="VE" >Venezuela</option><option value="VN" >Vietnam</option><option value="WF" >Wallis and Futuna</option><option value="EH" >Western Sahara</option><option value="YE" >Yemen</option><option value="ZM" >Zambia</option><option value="ZW" >Zimbabwe</option><option value="AX" >Åland Islands</option></select>								</div>
+							</div>
+						</li>
+						<li lang="fields">
+							<div class="field">
+								<label for="billing:telephone" class="required"><em>*</em>Telephone</label>
+								<div class="input-box">
+									<input type="text" name="billing[telephone]" value="" title="Telephone" class="input-text inputtext required-entry" id="billing:telephone" />
+								</div>
+							</div>
+							<div class="field">
+								<label for="billing:fax" class="required">Fax</label>
+								<div class="input-box">
+									<input type="text" name="billing[fax]" value="" title="Fax" class="input-text inputtext" id="billing:fax" />
+								</div>
+							</div>
+						</li>	
+	
+<script>
+	$MW_Onestepcheckout(function(){
+			$MW_Onestepcheckout("#billing\\:street1").css('width','245px');
+			$MW_Onestepcheckout("#billing\\:street2").css('width','245px');
+	});
+</script>										<div style="clear:both;margin-top:5px;"></div>							
+					
+																													
+											<div style="clear:both;"></div>
+						<input type="checkbox" name="register_new_account" value="0" title="register new account" id="register_new_account" class="checkbox"> <label for="register_new_account" style="float:none;">Create an account for later use</label>	
+				
+						<li class="fields" id="register-customer-password" style="display:none;">
+							<div class="field">
+								<label for="billing:customer_password" class="required"><em>*</em>Password</label>
+								<div class="input-box">
+									<input type="password" name="billing[customer_password]" id="billing:customer_password" title="Password" class="input-text inputtext required-entry validate-password" />
+								</div>
+							</div>
+							<div class="field">
+								<label for="billing:confirm_password" class="required"><em>*</em>Confirm Password</label>
+								<div class="input-box">
+									<input type="password" name="billing[confirm_password]" title="Confirm Password" id="billing:confirm_password" class="input-text inputtext required-entry validate-cpassword" />
+								</div>
+							</div>
+						</li>
+								
+													<li class="no-display"><input type="hidden" name="billing[save_in_address_book]" value="1" /></li>
+											</ul>
+			</fieldset>
+			</li>
+				<li>
+									<input type="checkbox" name="ship_to_same_address"  value="1" title="ship to same address" id="ship_to_same_address" class="checkbox" checked="checked"> <label for="ship_to_same_address" style="float:none;">Ship to same address</label>
+							</li>
+		
+				</ul>
+		</fieldset>
+		</div>
+		
+<!-- danh cho mage 1.3-->
+<script type="text/javascript">
+//<![CDATA[
+	
+    var billing = new Billing('co-billing-form', "http://www.local.com/donodeal/checkout/onepage/getAddress/address/", "http://www.local.com/donodeal/checkout/onepage/saveBilling/");
+    var billingForm = new VarienForm('co-billing-form');
+
+    //billingForm.setElementsRelation('billing:country_id', 'billing:region', 'http://www.local.com/donodeal/directory/json/childRegion/', 'Select State/Province...');
+    $('billing-address-select') && billing.newAddress(!$('billing-address-select').value);
+
+    var billingRegionUpdater = new RegionUpdater('billing:country_id', 'billing:region', 'billing:region_id', countryRegions, undefined, 'billing:postcode');
+//]]>
+</script>
+<script>
+	var billaddbook=1; //khac phuc tren IE khi change phai click 2 lan` moi ajax
+	$MW_Onestepcheckout("#billing\\:save_in_address_book").click(function(){
+				if(this.value != billaddbook){
+					temp=billaddbook;
+					billaddbook = this.value;
+					$MW_Onestepcheckout("#billing\\:save_in_address_book").attr("value",temp);
+				}
+	});
+</script>
+
+				</div>
+				<br>
+						 
+				<div style="display:none;" id="shipping_show">
+				<p class="onestepcheckout-numbers">Shipping address</p>
+						<div id="co-shipping-form">
+			<ul class="form-list">
+							<li id="shipping-new-address-form">
+					<fieldset>
+						<input type="hidden" name="shipping[address_id]" value="" id="shipping:address_id" />
+						<ul>
+																				<li class="fields">		<div class="customer-name">
+					<div class="field name-firstname">
+				<label for="shipping:firstname" class="required"><em>*</em>First Name</label>
+				<div class="input-box">
+					<input type="text" id="shipping:firstname" name="shipping[firstname]" value="" title="First Name" class="input-text required-entry" onchange="shipping.setSameAsBilling(false)" />
+				</div>
+			</div>
+					<div class="field name-lastname">
+				<label for="shipping:lastname" class="required"><em>*</em>Last Name</label>
+				<div class="input-box">
+					<input type="text" id="shipping:lastname" name="shipping[lastname]" value="" title="Last Name" class="input-text required-entry" onchange="shipping.setSameAsBilling(false)" />
+				</div>
+			</div>
+				</div>
+
+</li>
+							<li class="fields">
+								<div class="fields">
+									<label for="shipping:company" class="required">Company</label>
+									<div class="input-box">
+										<input type="text" id="shipping:company" name="shipping[company]" value="" title="Company" class="input-text inputtext" onchange="shipping.setSameAsBilling(false);" />
+									</div>
+								</div>
+												</li>
+							<li class="wide">
+								<label for="shipping:street1" class="required"><em>*</em>Address</label>
+								<div class="input-box">
+									<input type="text" title="Street Address" name="shipping[street][]" id="shipping:street1" value="" class="input-text inputtext required-entry" onchange="shipping.setSameAsBilling(false);" />
+								</div>
+								</li>
+												<li class="wide">
+								<div class="input-box">
+									<input type="text" title="Street Address 2" name="shipping[street][]" id="shipping:street2" value="" class="input-text inputtext" onchange="shipping.setSameAsBilling(false);" />
+								</div>
+							</li>
+												<li class="fields">
+								<div class="field">
+									<label for="shipping:city" class="required"><em>*</em>City</label>
+									<div class="input-box">
+										<input type="text" title="City" name="shipping[city]" value="" class="input-text inputtext required-entry" id="shipping:city" onchange="shipping.setSameAsBilling(false);" />
+									</div>
+								</div>
+								<div class="field">
+									<label for="shipping:region" class="required"><em>*</em>State/Province</label>
+									<div class="input-box">
+										<select id="shipping:region_id" name="shipping[region_id]" title="State/Province" class="validate-select" style="display:none;">
+											<option value="">Please select region, state or province</option>
+										</select>
+										<script type="text/javascript">
+										//<![CDATA[
+											$('shipping:region_id').setAttribute('defaultValue',  "");
+										//]]>
+										</script>
+										<input type="text" id="shipping:region" name="shipping[region]" value="" title="State/Province" class="input-text inputtext" style="display:none;" />
+									</div>
+								</div>
+							</li>
+							<li class="fields">
+								<div class="field">
+									<label for="shipping:postcode" class="required"><em>*</em>Zip/Postal Code</label>
+									<div class="input-box">
+										<input type="text" title="Zip/Postal Code" name="shipping[postcode]" id="shipping:postcode" value="" class="input-text inputtext validate-zip-international required-entry" onchange="shipping.setSameAsBilling(false);" />
+									</div>
+								</div>
+								<div class="field">
+									<label for="shipping:country_id" class="required"><em>*</em>Country</label>
+									<div class="input-box">
+										<select name="shipping[country_id]" id="shipping:country_id" class="validate-select" title="Country" onchange="if(window.shipping)shipping.setSameAsBilling(false);"><option value="" > </option><option value="AF" >Afghanistan</option><option value="AL" >Albania</option><option value="DZ" >Algeria</option><option value="AS" >American Samoa</option><option value="AD" >Andorra</option><option value="AO" >Angola</option><option value="AI" >Anguilla</option><option value="AQ" >Antarctica</option><option value="AG" >Antigua and Barbuda</option><option value="AR" >Argentina</option><option value="AM" >Armenia</option><option value="AW" >Aruba</option><option value="AU" >Australia</option><option value="AT" >Austria</option><option value="AZ" >Azerbaijan</option><option value="BS" >Bahamas</option><option value="BH" >Bahrain</option><option value="BD" >Bangladesh</option><option value="BB" >Barbados</option><option value="BY" >Belarus</option><option value="BE" >Belgium</option><option value="BZ" >Belize</option><option value="BJ" >Benin</option><option value="BM" >Bermuda</option><option value="BT" >Bhutan</option><option value="BO" >Bolivia</option><option value="BA" >Bosnia and Herzegovina</option><option value="BW" >Botswana</option><option value="BV" >Bouvet Island</option><option value="BR" >Brazil</option><option value="IO" >British Indian Ocean Territory</option><option value="VG" >British Virgin Islands</option><option value="BN" >Brunei</option><option value="BG" >Bulgaria</option><option value="BF" >Burkina Faso</option><option value="BI" >Burundi</option><option value="KH" >Cambodia</option><option value="CM" >Cameroon</option><option value="CA" >Canada</option><option value="CV" >Cape Verde</option><option value="KY" >Cayman Islands</option><option value="CF" >Central African Republic</option><option value="TD" >Chad</option><option value="CL" >Chile</option><option value="CN" >China</option><option value="CX" >Christmas Island</option><option value="CC" >Cocos [Keeling] Islands</option><option value="CO" >Colombia</option><option value="KM" >Comoros</option><option value="CG" >Congo - Brazzaville</option><option value="CD" >Congo - Kinshasa</option><option value="CK" >Cook Islands</option><option value="CR" >Costa Rica</option><option value="HR" >Croatia</option><option value="CU" >Cuba</option><option value="CY" >Cyprus</option><option value="CZ" >Czech Republic</option><option value="CI" >Côte d’Ivoire</option><option value="DK" >Denmark</option><option value="DJ" >Djibouti</option><option value="DM" >Dominica</option><option value="DO" >Dominican Republic</option><option value="EC" >Ecuador</option><option value="EG" >Egypt</option><option value="SV" >El Salvador</option><option value="GQ" >Equatorial Guinea</option><option value="ER" >Eritrea</option><option value="EE" >Estonia</option><option value="ET" >Ethiopia</option><option value="FK" >Falkland Islands</option><option value="FO" >Faroe Islands</option><option value="FJ" >Fiji</option><option value="FI" >Finland</option><option value="FR" >France</option><option value="GF" >French Guiana</option><option value="PF" >French Polynesia</option><option value="TF" >French Southern Territories</option><option value="GA" >Gabon</option><option value="GM" >Gambia</option><option value="GE" >Georgia</option><option value="DE" >Germany</option><option value="GH" >Ghana</option><option value="GI" >Gibraltar</option><option value="GR" >Greece</option><option value="GL" >Greenland</option><option value="GD" >Grenada</option><option value="GP" >Guadeloupe</option><option value="GU" >Guam</option><option value="GT" >Guatemala</option><option value="GG" >Guernsey</option><option value="GN" >Guinea</option><option value="GW" >Guinea-Bissau</option><option value="GY" >Guyana</option><option value="HT" >Haiti</option><option value="HM" >Heard Island and McDonald Islands</option><option value="HN" >Honduras</option><option value="HK" >Hong Kong SAR China</option><option value="HU" >Hungary</option><option value="IS" >Iceland</option><option value="IN" >India</option><option value="ID" >Indonesia</option><option value="IR" >Iran</option><option value="IQ" >Iraq</option><option value="IE" >Ireland</option><option value="IM" >Isle of Man</option><option value="IL" >Israel</option><option value="IT" >Italy</option><option value="JM" >Jamaica</option><option value="JP" >Japan</option><option value="JE" >Jersey</option><option value="JO" >Jordan</option><option value="KZ" >Kazakhstan</option><option value="KE" >Kenya</option><option value="KI" >Kiribati</option><option value="KW" >Kuwait</option><option value="KG" >Kyrgyzstan</option><option value="LA" >Laos</option><option value="LV" >Latvia</option><option value="LB" >Lebanon</option><option value="LS" >Lesotho</option><option value="LR" >Liberia</option><option value="LY" >Libya</option><option value="LI" >Liechtenstein</option><option value="LT" >Lithuania</option><option value="LU" >Luxembourg</option><option value="MO" >Macau SAR China</option><option value="MK" >Macedonia</option><option value="MG" >Madagascar</option><option value="MW" >Malawi</option><option value="MY" >Malaysia</option><option value="MV" >Maldives</option><option value="ML" >Mali</option><option value="MT" >Malta</option><option value="MH" >Marshall Islands</option><option value="MQ" >Martinique</option><option value="MR" >Mauritania</option><option value="MU" >Mauritius</option><option value="YT" >Mayotte</option><option value="MX" >Mexico</option><option value="FM" >Micronesia</option><option value="MD" >Moldova</option><option value="MC" >Monaco</option><option value="MN" >Mongolia</option><option value="ME" >Montenegro</option><option value="MS" >Montserrat</option><option value="MA" >Morocco</option><option value="MZ" >Mozambique</option><option value="MM" >Myanmar [Burma]</option><option value="NA" >Namibia</option><option value="NR" >Nauru</option><option value="NP" >Nepal</option><option value="NL" >Netherlands</option><option value="AN" >Netherlands Antilles</option><option value="NC" >New Caledonia</option><option value="NZ" >New Zealand</option><option value="NI" >Nicaragua</option><option value="NE" >Niger</option><option value="NG" >Nigeria</option><option value="NU" >Niue</option><option value="NF" >Norfolk Island</option><option value="KP" >North Korea</option><option value="MP" >Northern Mariana Islands</option><option value="NO" >Norway</option><option value="OM" >Oman</option><option value="PK" >Pakistan</option><option value="PW" >Palau</option><option value="PS" >Palestinian Territories</option><option value="PA" >Panama</option><option value="PG" >Papua New Guinea</option><option value="PY" >Paraguay</option><option value="PE" >Peru</option><option value="PH" >Philippines</option><option value="PN" >Pitcairn Islands</option><option value="PL" >Poland</option><option value="PT" >Portugal</option><option value="PR" >Puerto Rico</option><option value="QA" >Qatar</option><option value="RO" >Romania</option><option value="RU" >Russia</option><option value="RW" >Rwanda</option><option value="RE" >Réunion</option><option value="BL" >Saint Barthélemy</option><option value="SH" >Saint Helena</option><option value="KN" >Saint Kitts and Nevis</option><option value="LC" >Saint Lucia</option><option value="MF" >Saint Martin</option><option value="PM" >Saint Pierre and Miquelon</option><option value="VC" >Saint Vincent and the Grenadines</option><option value="WS" >Samoa</option><option value="SM" >San Marino</option><option value="SA" >Saudi Arabia</option><option value="SN" >Senegal</option><option value="RS" >Serbia</option><option value="SC" >Seychelles</option><option value="SL" >Sierra Leone</option><option value="SG" >Singapore</option><option value="SK" >Slovakia</option><option value="SI" >Slovenia</option><option value="SB" >Solomon Islands</option><option value="SO" >Somalia</option><option value="ZA" >South Africa</option><option value="GS" >South Georgia and the South Sandwich Islands</option><option value="KR" >South Korea</option><option value="ES" >Spain</option><option value="LK" >Sri Lanka</option><option value="SD" >Sudan</option><option value="SR" >Suriname</option><option value="SJ" >Svalbard and Jan Mayen</option><option value="SZ" >Swaziland</option><option value="SE" >Sweden</option><option value="CH" >Switzerland</option><option value="SY" >Syria</option><option value="ST" >São Tomé and Príncipe</option><option value="TW" >Taiwan</option><option value="TJ" >Tajikistan</option><option value="TZ" >Tanzania</option><option value="TH" >Thailand</option><option value="TL" >Timor-Leste</option><option value="TG" >Togo</option><option value="TK" >Tokelau</option><option value="TO" >Tonga</option><option value="TT" >Trinidad and Tobago</option><option value="TN" >Tunisia</option><option value="TR" >Turkey</option><option value="TM" >Turkmenistan</option><option value="TC" >Turks and Caicos Islands</option><option value="TV" >Tuvalu</option><option value="UM" >U.S. Minor Outlying Islands</option><option value="VI" >U.S. Virgin Islands</option><option value="UG" >Uganda</option><option value="UA" >Ukraine</option><option value="AE" >United Arab Emirates</option><option value="GB" >United Kingdom</option><option value="US" selected="selected" >United States</option><option value="UY" >Uruguay</option><option value="UZ" >Uzbekistan</option><option value="VU" >Vanuatu</option><option value="VA" >Vatican City</option><option value="VE" >Venezuela</option><option value="VN" >Vietnam</option><option value="WF" >Wallis and Futuna</option><option value="EH" >Western Sahara</option><option value="YE" >Yemen</option><option value="ZM" >Zambia</option><option value="ZW" >Zimbabwe</option><option value="AX" >Åland Islands</option></select>									</div>
+								</div>
+							</li>
+							<li class="fields">
+								<div class="field">
+									<label for="shipping:telephone" class="required"><em>*</em>Telephone</label>
+									<div class="input-box">
+										<input type="text" name="shipping[telephone]" value="" title="Telephone" class="input-text inputtext required-entry" id="shipping:telephone" onchange="shipping.setSameAsBilling(false);" />
+									</div>
+								</div>
+								<div class="field">
+									<label for="shipping:fax" class="required">Fax</label>
+									<div class="input-box">
+										<input type="text" name="shipping[fax]" value="" title="Fax" class="input-text inputtext" id="shipping:fax" onchange="shipping.setSameAsBilling(false);" />
+									</div>
+								</div>
+							</li>
+
+<script>
+	$MW_Onestepcheckout(function(){
+			$MW_Onestepcheckout("#shipping\\:street1").css('width','245px');
+			$MW_Onestepcheckout("#shipping\\:street2").css('width','245px');
+	});
+</script>							
+															<li class="no-display"><input type="hidden" name="shipping[save_in_address_book]" value="1" /></li>
+												</ul>
+						<li class="control samebilling" >
+							<input type="checkbox" name="shipping[same_as_billing]" id="shipping:same_as_billing" value="1" title="Use Billing Address" onclick="shipping.setSameAsBilling(this.checked);" class="checkbox" /><label for="shipping:same_as_billing" style="float:none;">Use Billing Address</label>
+						</li>
+					</fieldset>
+				</li>
+
+			</ul>
+				</div>
+<!-- danh cho mage 1.3-->
+<script type="text/javascript">
+//<![CDATA[
+    var shipping = new Shipping('co-shipping-form', 'http://www.local.com/donodeal/checkout/onepage/getAddress/address/', 'http://www.local.com/donodeal/checkout/onepage/saveShipping/','http://www.local.com/donodeal/checkout/onepage/shippingMethod/');
+    var shippingForm = new VarienForm('co-shipping-form');
+    shippingForm.extraChildParams = ' onchange="shipping.setSameAsBilling(false);"';
+    //shippingForm.setElementsRelation('shipping:country_id', 'shipping:region', 'http://www.local.com/donodeal/directory/json/childRegion/', 'Select State/Province...');
+    $('shipping-address-select') && shipping.newAddress(!$('shipping-address-select').value);
+
+    var shippingRegionUpdater = new RegionUpdater('shipping:country_id', 'shipping:region', 'shipping:region_id', countryRegions, undefined, 'shipping:postcode');
+//]]>
+</script>
+<script>
+	var shipaddbook=1; //khac phuc tren IE khi change phai click 2 lan` moi ajax
+	$MW_Onestepcheckout("#shipping\\:save_in_address_book").click(function(){
+				if(this.value != shipaddbook){
+					temp=shipaddbook;
+					shipaddbook = this.value;
+					$MW_Onestepcheckout("#shipping\\:save_in_address_book").attr("value",temp);
+				}
+	});
+</script>				</div>
+									</div>
+			<div class="onestepcheckout-column-2">
+				<div id="onestepcheckout-column-container">
+									<div class="onestepcheckout-column-middle">	
+						<p class="onestepcheckout-numbers onestepcheckout-numbers-2">Shipping method</p>
+						<div>
+						
+<div id="co-shipping-method-form" >
+    <div id="checkout-shipping-method-load">
+        <dl id="checkout-shipping-method-loadding" class="sp-methods">
+            <dt>Flat Rate</dt>
+        <dd>
+            <ul>
+                            <li>
+                                                                   <span class="no-display"><input name="shipping_method" type="radio" value="flatrate_flatrate" id="s_method_flatrate_flatrate" checked="checked" /></span>
+                                                <label for="s_method_flatrate_flatrate">Fixed                                                                        <span class="price">$20.00</span>                                                </label>
+                                   </li>
+                        </ul>
+        </dd>
+    </dl>
+<script type="text/javascript">
+	var shipping_method_changed=-1; //khac phuc tren IE khi change phai click 2 lan` moi ajax
+	$MW_Onestepcheckout(".shipping_method_handle").click(function(){
+				if(this.value != shipping_method_changed){
+					updateShippingMethod();
+					shipping_method_changed = this.value;
+				}
+	});
+
+</script>
+    </div>
+<!--////////////////////////////////-->
+	
+<!--//////////////////////////-->
+    <script type="text/javascript">
+    //<![CDATA[
+        var shippingMethod = new ShippingMethod('co-shipping-method-form', "http://www.local.com/donodeal/checkout/onepage/saveShippingMethod/");
+    //]]>
+    </script>
+</div>
+<!--</form>-->
+						</div>
+					</div>
+									<div class="onestepcheckout-column-right">
+						<p class="onestepcheckout-numbers onestepcheckout-numbers-3">Payment method</p>
+						<div>
+						<script type="text/javascript">
+//<![CDATA[
+    var payment = new Payment('co-payment-form', 'http://www.local.com/donodeal/checkout/onepage/savePayment/');
+//]]>
+</script>
+<div  id="co-payment-form">
+    <fieldset>
+        
+
+<dl class="sp-methods" id="checkout-payment-method-load">
+    <dt>
+
+            <input id="p_method_checkmo" value="checkmo" type="radio" name="payment[method]" title="Check / Money order" onclick="payment.switchMethod('checkmo')" class="radio payment_method_handle" />
+    
+        <label for="p_method_checkmo">Check / Money order </label>
+    </dt>
+
+    
+				    <dt>
+
+            <input id="p_method_ccsave" value="ccsave" type="radio" name="payment[method]" title="Credit Card (saved)" onclick="payment.switchMethod('ccsave')" class="radio payment_method_handle" />
+    
+        <label for="p_method_ccsave">Credit Card (saved) </label>
+    </dt>
+
+    
+						<dd>
+				<ul class="form-list" id="payment_form_ccsave" style="display:none;">
+    <li>
+        <label for="ccsave_cc_owner" class="required"><em>*</em>Name on Card</label>
+        <div class="input-box">
+            <input type="text" title="Name on Card" class="input-text required-entry" id="ccsave_cc_owner" name="payment[cc_owner]" value="" />
+        </div>
+    </li>
+    <li>
+        <label for="ccsave_cc_type" class="required"><em>*</em>Credit Card Type</label>
+        <div class="input-box">
+            <select id="ccsave_cc_type" name="payment[cc_type]" title="Credit Card Type" class="required-entry validate-cc-type-select">
+                <option value="">--Please Select--</option>
+                                        <option value="AE">American Express</option>
+                            <option value="VI">Visa</option>
+                            <option value="MC">MasterCard</option>
+                            <option value="DI">Discover</option>
+                        </select>
+        </div>
+    </li>
+    <li>
+        <label for="ccsave_cc_number" class="required"><em>*</em>Credit Card Number</label>
+        <div class="input-box">
+            <input type="text" id="ccsave_cc_number" name="payment[cc_number]" title="Credit Card Number" class="input-text validate-cc-number validate-cc-type" value="" />
+        </div>
+    </li>
+    <li>
+        <label for="ccsave_expiration" class="required"><em>*</em>Expiration Date</label>
+        <div class="input-box">
+            <div class="v-fix">
+                <select id="ccsave_expiration" name="payment[cc_exp_month]" class="month validate-cc-exp required-entry">
+                                                    <option value="" selected="selected">Month</option>
+                                    <option value="1">01 - January</option>
+                                    <option value="2">02 - February</option>
+                                    <option value="3">03 - March</option>
+                                    <option value="4">04 - April</option>
+                                    <option value="5">05 - May</option>
+                                    <option value="6">06 - June</option>
+                                    <option value="7">07 - July</option>
+                                    <option value="8">08 - August</option>
+                                    <option value="9">09 - September</option>
+                                    <option value="10">10 - October</option>
+                                    <option value="11">11 - November</option>
+                                    <option value="12">12 - December</option>
+                                </select>
+            </div>
+            <div class="v-fix">
+                                <select id="ccsave_expiration_yr" name="payment[cc_exp_year]" class="year required-entry">
+                                    <option value="" selected="selected">Year</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>
+                                </select>
+            </div>
+        </div>
+    </li>
+            <li>
+        <label for="ccsave_cc_cid" class="required"><em>*</em>Card Verification Number</label>
+        <div class="input-box">
+            <div class="v-fix">
+                <input type="text" title="Card Verification Number" class="input-text cvv required-entry validate-cc-cvn" id="ccsave_cc_cid" name="payment[cc_cid]" value="" />
+            </div>
+            <a href="#" class="cvv-what-is-this">What is this?</a>
+        </div>
+    </li>
+        </ul>
+			</dd>
+			</dl>
+<script type="text/javascript">
+//<![CDATA[
+payment.init();
+//]]>
+</script>
+<script type="text/javascript">
+	var payment_method_changed = -1;
+	if(payment_load()){
+		$MW_Onestepcheckout(".payment_method_handle").click(function(){
+				if(this.value != payment_method_changed){
+					updatePaymentMethod(this.value);	
+					payment_method_changed = this.value;
+				}
+		});
+	}
+	//dua vao dashboart nhu updateshippingmethod()
+	// function updatePaymentMethod(value)
+	// {
+		// //msg = "Loadding ...";
+		// //$MW_Onestepcheckout('#checkout-review-load').html(msg);	// #checkout-review-load: id cua? bang? tong? tie`n, lenh .html(msg) cho phep gi lai. noi dung cua id voi'noi dung chua' trong bien $msg
+		// $MW_Onestepcheckout('#loading-mask').css('display','block');
+		// $MW_Onestepcheckout('.btn-checkout').attr('disabled','disabled');
+		// $MW_Onestepcheckout.ajax({
+		   // type: "POST",
+		   // url: "http://www.local.com/donodeal/onestepcheckout/index/updatepaymentmethod/",
+		   // data: "payment%5Bmethod%5D="+value,
+		   // success: function(msg){
+			// $MW_Onestepcheckout('#checkout-review-load').html(msg);
+			// $MW_Onestepcheckout('#loading-mask').css('display','none');
+			// $MW_Onestepcheckout('.btn-checkout').removeAttr('disabled');
+		   // }
+		 // });
+	// }
+</script>    </fieldset>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+    payment.currentMethod = "";
+//]]>
+</script>
+						</div>
+					</div>
+					<div class="clear_both">&nbsp;</div>
+				</div>
+				<div class="review">
+						<p class="onestepcheckout-numbers onestepcheckout-numbers-4">Review your order</p>
+						<div>
+								<div id="checkout-review-load">
+			<div id="checkout-review-table-wrapper">
+    <table class="data-table" id="checkout-review-table">
+		
+	                <col />
+        <col width="1" />
+        <col width="1" />
+        <col width="1" />
+                <thead>
+            <tr>
+						
+			                <th rowspan="1">Product Name</th>
+                <th colspan="1" class="a-center">Price</th>
+                <th rowspan="1" class="a-center">Qty</th>
+                <th colspan="1" class="a-center">Subtotal</th>
+            </tr>
+                    </thead>
+        <tfoot>
+		    	    <tr>
+    <td style="" class="a-right" colspan="3">
+        Subtotal    </td>
+    <td style="" class="a-right">
+        <span class="price">$79.96</span>    </td>
+</tr>
+<tr>
+    <td style="" class="a-right" colspan="3">
+        Shipping &amp; Handling (Flat Rate - Fixed)    </td>
+    <td style="" class="a-right">
+        <span class="price">$20.00</span>    </td>
+</tr>
+    <tr>
+    <td style="" class="a-right" colspan="3">
+        <strong>Grand Total</strong>
+    </td>
+    <td style="" class="a-right">
+        <strong><span class="price">$99.96</span></strong>
+    </td>
+</tr>
+	
+					
+</tfoot>
+        <tbody>
+                    <tr>
+		
+	    <td><h3 class="product-name">Super Skinny Mid Wash Crop Jeans-26</h3>
+            </td>
+        <td class="a-right">
+                    <span class="cart-price">
+        
+                            <span class="price">$19.99</span>            
+        </span>
+
+
+            </td>
+            <td class="a-center">
+			1		</td>
+        <td class="a-right">
+                    <span class="cart-price">
+        
+                            <span class="price">$19.99</span>            
+        </span>
+            </td>
+        </tr>
+                    <tr>
+		
+	    <td><h3 class="product-name">Super Skinny Mid Wash Crop Jeans-28</h3>
+            </td>
+        <td class="a-right">
+                    <span class="cart-price">
+        
+                            <span class="price">$19.99</span>            
+        </span>
+
+
+            </td>
+            <td class="a-center">
+			3		</td>
+        <td class="a-right">
+                    <span class="cart-price">
+        
+                            <span class="price">$59.97</span>            
+        </span>
+            </td>
+        </tr>
+                </tbody>
+    </table>
+</div>
+<!--<script type="text/javascript">
+//<![CDATA[
+    decorateTable('checkout-review-table');
+    truncateOptions();
+//]]>
+</script>
+-->
+		</div>
+		<div id="checkout-review-options">
+			<br>
+<!--bo sung -->
+		
+	<div class="onestepcheckout-enable-terms">
+		<input class="required-entry" type="checkbox" id="id_accept_terms" name="accept_terms" value="1"  />
+		<label for="id_accept_terms">I accept the <a id="onestepcheckout-toc-link" target="_blank" href="#inline2">Terms and Conditions</a></label>
+	</div>
+		</div>
+		<div id="checkout-review-submit">
+			
+			<div class="buttons-set" id="review-buttons-container" style="margin:1em 0 0;">
+				<p class="f-left">Forgot an Item? <a href="http://www.local.com/donodeal/checkout/cart/">Edit Your Cart</a></p>
+				<button type="submit" title="Place Order" class="button btn-checkout" ><span style="_position:fixed;"><span style="_position:fixed;">Place Order</span></span></button><!--da xoa onclick="review.save();"-->
+				<span class="please-wait" id="review-please-wait" style="display:none;">
+					<img src="http://www.local.com/donodeal/skin/frontend/default/donodeal/images/opc-ajax-loader.gif" alt="Submitting order information..." title="Submitting order information..." class="v-middle" /> Submitting order information...				</span>
+			</div>
+
+		</div>
+<script type='text/javascript'>
+    //<![CDATA[
+        // var review = new Review('http://www.local.com/donodeal/checkout/onepage/saveOrder/', 'http://www.local.com/donodeal/checkout/onepage/success/', $('checkout-agreements'));
+    //]]>
+</script>
+						</div>	
+				</div>
+			</div>
+			<div class="clear_both">&nbsp;</div>			
+		</form>
+						<div style="display: none;">
+					<div id="inline1" style="width:400px;height:235px;overflow:auto;">
+								<div class="col2-set">
+						<div class="col-2">
+				<div>
+				<h1>Login</h1>
+				</div>
+				<!--<h2 style="font-size:12px;">Please login with your email address and password.</h2>-->
+								<form id="login-form" method="post">
+				<fieldset>
+					<div class="fieldset">
+						<h2 class="legend">Input your email and password here</h2>
+						<p>Please login with your email address and password..</p>
+						<div id="errorlogin">Invalid email or password!</div>
+						<ul class="form-list">
+							<li>
+								<label for="login-email" class="required" >Email Address<em>*</em></label>
+								<div class="input-box" style="float:left;">
+									<input type="text" class="input-text required-entry validate-email" id="login-email" name="login[username]" value="" />
+								</div>
+							</li>
+							<li>
+								<label for="login-password" class="required" >Password<em style="position:static;float:none;color:#EB340A;font-style:normal;right:-8px;top:0;">*</em></label>
+								<div class="input-box" style="float:left;">
+									<input type="password"  class="input-text required-entry" id="login-password" name="login[password]" />
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<div class="col-2" style="width:390px;float:none;">
+						<div class="buttons-set">
+							<p class="required">* Required Fields</p>
+														<a id="forgotpassword" href="#inline3" class="f-left">Forgot your password?</a>
+							<span  id="login-please-wait" class="please-wait">
+								<img  class="v-middle" title="Loading next step..." alt="Loading next step..." src="http://www.local.com/donodeal/skin/frontend/default/default//mw_onestepcheckout/images/opc-ajax-loader.gif"> Loading...        
+							</span>
+							<button type="button" class="button" onclick="onepageLogin(this)"><span ><span >Login</span></span></button>
+						</div>
+					</div>
+				</fieldset>
+				</form>
+			</div>
+		</div>
+
+<script type="text/javascript">
+//<![CDATA[
+    var loginForm = new VarienForm('login-form', true);
+    $('login-email').observe('keypress', bindLoginPost);
+    $('login-password').observe('keypress', bindLoginPost);
+    function bindLoginPost(evt){
+        if (evt.keyCode == Event.KEY_RETURN) {
+            //loginForm.submit();
+		   //updateLogin($MW_Onestepcheckout('#login-email').val(),$MW_Onestepcheckout('#login-password').val());
+		   return false;
+        }
+    }
+    function onepageLogin(button)
+    {
+        if(loginForm.validator && loginForm.validator.validate()){
+            //button.disabled = true;
+           // loginForm.submit();
+		   updateLogin($MW_Onestepcheckout('#login-email').val(),$MW_Onestepcheckout('#login-password').val());
+        }
+		$MW_Onestepcheckout('#errorlogin').css('display','none');
+		return false;
+    }
+//]]>
+</script>
+<script type="text/javascript">
+function updateLogin(email,password)
+{
+$MW_Onestepcheckout('.buttons-set .button').css('display','none');
+$MW_Onestepcheckout('#login-please-wait').css('display','block');	//note: echo $this->getChildHtml('login_before') cuar .col2-set
+	$MW_Onestepcheckout.ajax({
+	type: "POST",
+	url: "http://www.local.com/donodeal/onestepcheckout/index/updatelogin/",
+	data: "email="+email+"&"+"password="+password,
+	success: function(msg){
+		//alert(msg);
+		if(msg==0){
+			$MW_Onestepcheckout('.buttons-set .button').css('display','block');
+			$MW_Onestepcheckout('#login-please-wait').css('display','none');
+			$MW_Onestepcheckout('#errorlogin').css('display','block');
+			$MW_Onestepcheckout('#login-email').addClass('validation-failed');
+			$MW_Onestepcheckout('#login-password').addClass('validation-failed');
+			}
+		else{
+			//var url="http://www.local.com/donodeal/onestepcheckout/index/";    
+			var url="http://www.local.com/donodeal/checkout/onepage/";    
+			$MW_Onestepcheckout(location).attr('href',url);
+			}
+		}
+	});
+}
+
+</script>
+	
+					</div>
+					<div id="inline3" style="width:440px;height:190px;overflow:auto;">
+									<div class="page-title">
+				<h1 >Forgot Your Password?</h1>
+			</div>
+						<form method="post" id="form-validate" >
+				<div class="fieldset" >
+					<h2 class="legend">Retrieve your password here</h2>
+					<p >Please enter your email below and we'll send you a new password.</p>
+					<ul class="form-list">
+						<li >
+							<label for="email_address" class="required">Email Address<em >*</em></label>
+							<div class="input-box" >
+								<input type="text"  name="email" alt="email" id="email_address" class="input-text required-entry validate-email" value="" />
+								<div  id="errorforgotpass" class="validation-advice">Invalid email!</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="buttons-set" >
+					<p class="required" >* Required Fields</p>
+					<p class="back-link"><a id="backlogin" href="#inline1"  ><small >&laquo; </small>Back to Login</a></p>
+					<span  id="forgotpass-please-wait" class="please-wait">
+						<img class="v-middle" title="Loading next step..." alt="Loading next step..." src="http://www.local.com/donodeal/skin/frontend/default/default//mw_onestepcheckout/images/opc-ajax-loader.gif">Loading...       
+					</span>
+					<button id="btforgotpass" type="button" onclick="onepageforgotpassword(this)" title="Submit" class="button"><span ><span>Submit</span></span></button>
+				</div>
+			</form>
+<script type="text/javascript">
+//<![CDATA[
+    var dataForm = new VarienForm('form-validate', true);
+    function onepageforgotpassword(button)
+    {
+        if(dataForm.validator && dataForm.validator.validate()){
+            //button.disabled = true;
+           // loginForm.submit();
+		   updateForgotpassword($MW_Onestepcheckout('#email_address').val());
+        }
+		$MW_Onestepcheckout('#errorforgotpass').css('display','none');
+		//$MW_Onestepcheckout('#email_address').addClass('validation-failed')
+    }
+//]]>
+</script>
+<script type="text/javascript">
+function updateForgotpassword(email)
+{
+$MW_Onestepcheckout('#btforgotpass').css('display','none');
+$MW_Onestepcheckout('#forgotpass-please-wait').css('display','block');	//note: echo $this->getChildHtml('login_before') cuar .col2-set
+	$MW_Onestepcheckout.ajax({
+	type: "POST",
+	url: "http://www.local.com/donodeal/onestepcheckout/index/forgotpass/",
+	data: "email="+email,
+	success: function(msg){
+			if(msg==1){
+				$MW_Onestepcheckout('#inline3').html("<div style='text-align:left;'><h1>Forgotten your password?</h1>Enter your email below and we'll send you a new password by email.<br>We have now sent you a new password to your email address. Click the link below to return to login.<br><p class='back-link'><a id='backlogin1' href='#inline1'><small>&laquo; </small>Back to Login</a></p></div>");
+				$MW_Onestepcheckout("#backlogin1").fancybox({
+					'titlePosition'		: 'inside',
+					'transitionIn'		: 'none',
+					'transitionOut'		: 'none'
+				});
+			}
+			else{
+				$MW_Onestepcheckout('#btforgotpass').css('display','block');
+				$MW_Onestepcheckout('#forgotpass-please-wait').css('display','none');
+				$MW_Onestepcheckout('#errorforgotpass').css('display','block');	
+				$MW_Onestepcheckout('#email_address').addClass('validation-failed')
+				}
+		}
+	});
+}
+</script>
+
+	
+					</div>
+					<div id="inline2" style="width:420px;height:250px;overflow:auto;">
+						<h1>Terms and Conditions </h1>
+						<br>
+						term and conditions and more...					</div>
+				</div>	
+				</div>
+	<div class="clear_both">&nbsp;</div>
+<div style="left: -2px; width: 1200px; min-height: 710px; display: none;top:51%;" id="loading-mask">
+    <p id="loading_mask_loader" class="loader"><img alt="Loading..." src="http://www.local.com/donodeal/skin/frontend/default/default/mw_onestepcheckout/images/ajax-loader-tr.gif"><br>Please wait...</p>
+
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-container">
+    <div class="footer">
+        <ul>
+<li><a href="http://www.local.com/donodeal/about-magento-demo-store">About Us</a></li>
+<li><a href="http://www.local.com/donodeal/customer-service">Customer Service</a></li>
+<li class="last privacy"><a href="http://www.local.com/donodeal/privacy-policy-cookie-restriction-mode">Privacy Policy</a></li>
+</ul><ul class="links">
+                        <li class="first" ><a href="http://www.local.com/donodeal/catalog/seo_sitemap/category/" title="Site Map" >Site Map</a></li>
+                                <li ><a href="http://www.local.com/donodeal/catalogsearch/term/popular/" title="Search Terms" >Search Terms</a></li>
+                                <li ><a href="http://www.local.com/donodeal/catalogsearch/advanced/" title="Advanced Search" >Advanced Search</a></li>
+                                <li ><a href="http://www.local.com/donodeal/sales/guest/form/" title="Orders and Returns" >Orders and Returns</a></li>
+                                <li class=" last" ><a href="http://www.local.com/donodeal/contacts/" title="Contact Us" >Contact Us</a></li>
+            </ul>
+        <p class="bugs">Help Us to Keep Magento Healthy - <a href="http://www.magentocommerce.com/bug-tracking" onclick="this.target='_blank'"><strong>Report All Bugs</strong></a> (ver. 1.8.0.0-alpha1)</p>
+        <address>&copy; 2013 Magento Demo Store. All Rights Reserved.</address>
+    </div>
+</div>
+            </div>
+</div>
+</body>
+</html>
